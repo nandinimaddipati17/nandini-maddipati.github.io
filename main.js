@@ -170,24 +170,9 @@ document.addEventListener('visibilitychange', () => {
 initParticles();
 animateParticles();
 
-// ── Contact Form ──────────────────────────────────────────
-const form = document.getElementById('contactForm');
-/**form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const btn = form.querySelector('button[type="submit"]');
-  const original = btn.textContent;
-  btn.textContent = 'Sent! ✓';
-  btn.style.background = '#4ade80';
-  btn.style.pointerEvents = 'none';
-  setTimeout(() => {
-    btn.textContent = original;
-    btn.style.background = '';
-    btn.style.pointerEvents = '';
-    form.reset();
-  }, 3000);
-  // 🔧 To actually send emails: integrate Formspree, EmailJS, or Netlify Forms
-  // Example Formspree: set form action="https://formspree.io/f/your-id" method="POST"
-});**/
+// ── Contact Form — handled by Formspree (action on the <form> tag) ──
+// No JS override needed; form submits natively to Formspree.
+// Emails land directly at nandinichowdary171@gmail.com.
 
 // ── Smooth active nav link highlighting ──────────────────
 const sections = document.querySelectorAll('section[id]');

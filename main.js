@@ -172,7 +172,7 @@ animateParticles();
 
 // ── Contact Form ──────────────────────────────────────────
 const form = document.getElementById('contactForm');
-form.addEventListener('submit', (e) => {
+/**form.addEventListener('submit', (e) => {
   e.preventDefault();
   const btn = form.querySelector('button[type="submit"]');
   const original = btn.textContent;
@@ -187,7 +187,7 @@ form.addEventListener('submit', (e) => {
   }, 3000);
   // 🔧 To actually send emails: integrate Formspree, EmailJS, or Netlify Forms
   // Example Formspree: set form action="https://formspree.io/f/your-id" method="POST"
-});
+});**/
 
 // ── Smooth active nav link highlighting ──────────────────
 const sections = document.querySelectorAll('section[id]');

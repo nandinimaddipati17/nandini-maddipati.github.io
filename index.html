@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nandini Maddipati – MSc AI & Data Science student at Deggendorf Institute of Technology. Expert in Python, ML, LLMs, RAG systems and data analytics. Available for internship from July 2026." />
+  <meta name="keywords" content="Nandini Maddipati, AI, Data Science, Machine Learning, Python, LLM, RAG, Deggendorf, portfolio, internship" />
+  <meta name="author" content="Nandini Maddipati" />
+  <meta property="og:title" content="Nandini Maddipati | AI & Data Science Portfolio" />
+  <meta property="og:description" content="MSc AI & Data Science student passionate about LLMs, causal AI, and building data-driven solutions." />
+  <meta property="og:type" content="website" />
+  <title>Nandini Maddipati | AI & Data Science</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo"><span class="logo-bracket">{</span>NM<span class="logo-bracket">}</span></div>
+    <ul class="nav__links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav__actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><span class="theme-icon">◐</span></button>
+      <a href="Nandini_Maddipati_cv.docx" class="btn btn--sm" download>Resume ↓</a>
+    </div>
+    <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__bg"><canvas id="particleCanvas"></canvas></div>
+    <div class="hero__content">
+      <p class="hero__pre reveal">Hallo, I'm</p>
+      <h1 class="hero__name reveal delay-1">Nandini<br /><em>Maddipati</em></h1>
+      <div class="hero__tags reveal delay-2">
+        <span class="tag">MSc AI & Data Science</span>
+        <span class="tag">LLM & RAG Systems</span>
+        <span class="tag">Python · ML · Analytics</span>
+        <span class="tag">📍 Deggendorf, Germany</span>
+      </div>
+      <p class="hero__sub reveal delay-3">
+        Master's student at <strong>Deggendorf Institute of Technology</strong> specialising in Artificial Intelligence &amp; Data Science. Building intelligent workflows at the intersection of LLMs, causal AI, and data-driven analytics.
+        <br/><br/>
+        <span class="avail-badge">🟢 Available for internship · July 2026 (6 months · Full-time)</span>
+      </p>
+      <div class="hero__ctas reveal delay-4">
+        <a href="#projects" class="btn btn--primary">View My Projects</a>
+        <a href="#contact" class="btn btn--ghost">Let's Connect</a>
+      </div>
+      <div class="hero__socials reveal delay-5">
+        <a href="https://linkedin.com/in/nandini-maddipati-186611245" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://github.com/nandinimaddipati17" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a>
+        <a href="mailto:nandinichowdary171@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero__scroll"><span>scroll</span><div class="scroll-line"></div></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about__text reveal">
+          <p class="section-label">01 / About</p>
+          <h2 class="section-title">Building intelligence<br /><em>from data</em></h2>
+          <p>I'm a Master's student in <strong>Artificial Intelligence & Data Science</strong> at Deggendorf Institute of Technology, Germany — specialising in machine learning, LLM systems, causal AI, and process analytics.</p>
+          <p>With a B.Tech in Computer Science from Annamacharya Institute of Technology (India) and hands-on experience in prompt engineering, blockchain research, and data science, I bridge the gap between academic AI research and real-world applications.</p>
+          <p>My recent work spans Retrieval-Augmented Generation (RAG) systems, AI-assisted analytical workflows, and computer vision — always with a focus on accuracy, scalability, and meaningful insight.</p>
+          <div class="about__stats">
+            <div class="stat"><span class="stat__num" data-target="4">0</span>+<span class="stat__label">Projects</span></div>
+            <div class="stat"><span class="stat__num" data-target="3">0</span>+<span class="stat__label">Internships</span></div>
+            <div class="stat"><span class="stat__num" data-target="2">0</span>+<span class="stat__label">Countries</span></div>
+            <div class="stat"><span class="stat__num" data-target="2">0</span><span class="stat__label">Languages</span></div>
+          </div>
+        </div>
+        <div class="about__visual reveal delay-2">
+          <div class="avatar-card">
+            <div class="avatar-ring"></div>
+            <div class="avatar-inner"><div class="avatar-initials">NM</div></div>
+            <div class="avatar-badge"><span class="status-dot"></span> Open to Work · July 2026</div>
+          </div>
+          <div class="floating-pill pill-1">Python 🐍</div>
+          <div class="floating-pill pill-2">LLMs 🤖</div>
+          <div class="floating-pill pill-3">RAG 🔍</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section section--alt" id="education">
+    <div class="container">
+      <p class="section-label reveal">02 / Education</p>
+      <h2 class="section-title reveal">Academic <em>Journey</em></h2>
+      <div class="timeline">
+
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="edu-header">
+              <div>
+                <h3>MSc Artificial Intelligence & Data Science</h3>
+                <p class="edu-school">Deggendorf Institute of Technology — Deggendorf, Germany 🇩🇪</p>
+              </div>
+              <span class="edu-year">Mar 2025 – Sep 2027</span>
+            </div>
+            <p class="edu-detail">Expected graduation: <strong>September 2027</strong></p>
+            <ul class="edu-highlights">
+              <li>Relevant Coursework: Financial Data Analysis, Time Series Forecasting, Probability Theory, Business Intelligence (BI), Predictive Analytics, Capital Markets Fundamentals</li>
+              <li>Actively improving German language skills (A2 → B1)</li>
+              <li>Mandatory full-time internship required — available from July 2026 for 6 months</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal delay-1">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="edu-header">
+              <div>
+                <h3>B.Tech in Computer Science & Engineering</h3>
+                <p class="edu-school">Annamacharya Institute of Technology and Sciences — Tirupati, India 🇮🇳</p>
+              </div>
+              <span class="edu-year">Jul 2020 – Jun 2024</span>
+            </div>
+            <p class="edu-detail">GPA: <strong>1.4 (German scale)</strong> — Outstanding academic achievement</p>
+            <ul class="edu-highlights">
+              <li>Relevant Coursework: Machine Learning & Artificial Intelligence, Database Management Systems, Software Engineering, Cloud Computing</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="container">
+      <p class="section-label reveal">03 / Skills</p>
+      <h2 class="section-title reveal">Tech <em>Arsenal</em></h2>
+      <div class="skills-grid">
+
+        <div class="skill-category reveal">
+          <h4 class="skill-cat-title"><span class="cat-icon">🧠</span> ML & Analytics</h4>
+          <div class="skill-chips">
+            <span class="chip chip--l1">Python</span>
+            <span class="chip chip--l1">Scikit-learn</span>
+            <span class="chip chip--l1">PyTorch</span>
+            <span class="chip chip--l1">Pandas</span>
+            <span class="chip chip--l1">NumPy</span>
+            <span class="chip chip--l1">SQL</span>
+            <span class="chip chip--l1">Statistical Analysis</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal delay-1">
+          <h4 class="skill-cat-title"><span class="cat-icon">🤖</span> AI & LLM Workflows</h4>
+          <div class="skill-chips">
+            <span class="chip chip--l2">OpenAI APIs</span>
+            <span class="chip chip--l2">LangChain</span>
+            <span class="chip chip--l2">LangGraph</span>
+            <span class="chip chip--l2">RAG Systems</span>
+            <span class="chip chip--l2">FAISS</span>
+            <span class="chip chip--l2">Qdrant</span>
+            <span class="chip chip--l2">Prompt Engineering</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal delay-2">
+          <h4 class="skill-cat-title"><span class="cat-icon">📊</span> Data & Visualisation</h4>
+          <div class="skill-chips">
+            <span class="chip chip--l3">Power BI</span>
+            <span class="chip chip--l3">Streamlit</span>
+            <span class="chip chip--l3">Data Visualisation</span>
+            <span class="chip chip--l3">EDA</span>
+            <span class="chip chip--l3">Dashboard Dev</span>
+            <span class="chip chip--l3">KPI Reporting</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h4 class="skill-cat-title"><span class="cat-icon">🔧</span> Dev & APIs</h4>
+          <div class="skill-chips">
+            <span class="chip chip--l4">FastAPI</span>
+            <span class="chip chip--l4">n8n Automation</span>
+            <span class="chip chip--l4">Git / GitHub</span>
+            <span class="chip chip--l4">Computer Vision</span>
+            <span class="chip chip--l4">Blockchain Basics</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal delay-1">
+          <h4 class="skill-cat-title"><span class="cat-icon">💼</span> Productivity & Collab</h4>
+          <div class="skill-chips">
+            <span class="chip chip--l5">Microsoft Excel</span>
+            <span class="chip chip--l5">PowerPoint</span>
+            <span class="chip chip--l5">Technical Docs</span>
+            <span class="chip chip--l5">Microsoft Teams</span>
+            <span class="chip chip--l5">Cross-functional</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal delay-2">
+          <h4 class="skill-cat-title"><span class="cat-icon">🌐</span> Languages</h4>
+          <div class="skill-chips">
+            <span class="chip chip--l6">English (C1)</span>
+            <span class="chip chip--l6">German (A2 → B1)</span>
+            <span class="chip chip--l6">Telugu (Native)</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section section--alt" id="experience">
+    <div class="container">
+      <p class="section-label reveal">04 / Experience</p>
+      <h2 class="section-title reveal">Work <em>Experience</em></h2>
+      <div class="exp-list">
+
+        <div class="exp-card reveal">
+          <div class="exp-card__left">
+            <div class="exp-logo">PW</div>
+            <div class="exp-line"></div>
+          </div>
+          <div class="exp-card__right">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">Prompt Engineering Intern</h3>
+                <p class="exp-company">Prowork <span class="exp-type">· Internship · India</span></p>
+              </div>
+              <span class="exp-period">Jul 2024 – Feb 2025</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Prepared reusable LLM prompt templates that <strong>reduced response time by 25%</strong> and improved output consistency across automation workflows</li>
+              <li>Analysed <strong>2000+ user interaction patterns</strong> to improve LLM response accuracy by 20%, strengthening end-to-end automation pipelines</li>
+            </ul>
+            <div class="exp-tags">
+              <span class="tag-sm">Prompt Engineering</span><span class="tag-sm">LLMs</span><span class="tag-sm">Automation</span><span class="tag-sm">NLP</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-card reveal delay-1">
+          <div class="exp-card__left">
+            <div class="exp-logo">FS</div>
+            <div class="exp-line"></div>
+          </div>
+          <div class="exp-card__right">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">Blockchain Technology Intern</h3>
+                <p class="exp-company">FutureSkills Prime <span class="exp-type">· Internship · India</span></p>
+              </div>
+              <span class="exp-period">Sep 2023 – Feb 2024</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Studied blockchain fundamentals: distributed ledger technology, consensus mechanisms, and cryptographic hashing</li>
+              <li>Explored cryptocurrency transactions, smart contracts, and real-world blockchain applications in finance, supply chain, and decentralised systems</li>
+            </ul>
+            <div class="exp-tags">
+              <span class="tag-sm">Blockchain</span><span class="tag-sm">Smart Contracts</span><span class="tag-sm">Cryptography</span><span class="tag-sm">DLT</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-card reveal delay-2">
+          <div class="exp-card__left">
+            <div class="exp-logo">PI</div>
+          </div>
+          <div class="exp-card__right">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">Data Science Virtual Intern</h3>
+                <p class="exp-company">PreqInsta <span class="exp-type">· Virtual Internship · India</span></p>
+              </div>
+              <span class="exp-period">Jun 2023 – Jul 2023</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Completed virtual case studies focused on exploratory data analysis (EDA) and data-driven decision making</li>
+              <li>Applied Python libraries (Pandas, Matplotlib, Seaborn) for data cleaning, transformation, and visualisation</li>
+            </ul>
+            <div class="exp-tags">
+              <span class="tag-sm">Python</span><span class="tag-sm">EDA</span><span class="tag-sm">Pandas</span><span class="tag-sm">Data Cleaning</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <p class="section-label reveal">05 / Projects</p>
+      <h2 class="section-title reveal">Featured <em>Work</em></h2>
+      <div class="projects-grid">
+
+        <!-- PROJECT 1 — Featured -->
+        <article class="project-card project-card--featured reveal">
+          <div class="project-card__img">
+            <div class="proj-visual proj-visual--1">
+              <div class="proj-visual__inner">
+                <span class="proj-icon">🎬</span>
+                <span class="proj-label">RAG · LLM · AI</span>
+              </div>
+            </div>
+            <span class="proj-badge">Featured</span>
+          </div>
+          <div class="project-card__body">
+            <h3>Movie RAG Chatbot</h3>
+            <p>End-to-end Retrieval-Augmented Generation (RAG) application that answers natural language movie queries using AI-based retrieval workflows. Leverages embeddings and vector search for semantic understanding beyond keyword matching.</p>
+            <div class="proj-stack">
+              <span>FastAPI</span><span>Streamlit</span><span>FAISS</span><span>Python</span><span>OpenAI Embeddings</span>
+            </div>
+            <div class="proj-highlights">
+              <span class="highlight-item">✓ Vector similarity search with FAISS</span>
+              <span class="highlight-item">✓ Structured knowledge retrieval</span>
+              <span class="highlight-item">✓ Natural language Q&A interface</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://github.com/nandinimaddipati17" class="btn btn--sm btn--ghost" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 2 -->
+        <article class="project-card reveal delay-1">
+          <div class="project-card__img">
+            <div class="proj-visual proj-visual--2">
+              <div class="proj-visual__inner">
+                <span class="proj-icon">🎫</span>
+                <span class="proj-label">AI Workflow · Automation</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h3>AI Support Ticket System</h3>
+            <p>AI-assisted workflow for processing structured support data, generating multilingual responses, and improving resolution efficiency using vector search and automation pipelines.</p>
+            <div class="proj-stack">
+              <span>Python</span><span>OpenAI APIs</span><span>Qdrant</span><span>n8n</span><span>RAG</span>
+            </div>
+            <div class="proj-highlights">
+              <span class="highlight-item">✓ Multilingual response generation</span>
+              <span class="highlight-item">✓ Qdrant vector database</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://github.com/nandinimaddipati17" class="btn btn--sm btn--ghost" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 3 -->
+        <article class="project-card reveal delay-2">
+          <div class="project-card__img">
+            <div class="proj-visual proj-visual--3">
+              <div class="proj-visual__inner">
+                <span class="proj-icon">📊</span>
+                <span class="proj-label">Data Analytics · BI</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h3>Vending Machine Sales Analysis</h3>
+            <p>Interactive Power BI dashboard with AI-assisted reflection workflows using LangGraph for iterative insight refinement. Applied structured feedback loops to improve analytical consistency and KPI reporting.</p>
+            <div class="proj-stack">
+              <span>Power BI</span><span>LangGraph</span><span>Python</span><span>Data Analysis</span>
+            </div>
+            <div class="proj-highlights">
+              <span class="highlight-item">✓ Interactive BI dashboard</span>
+              <span class="highlight-item">✓ AI-assisted reflection loops</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://github.com/nandinimaddipati17" class="btn btn--sm btn--ghost" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 4 -->
+        <article class="project-card reveal">
+          <div class="project-card__img">
+            <div class="proj-visual proj-visual--4">
+              <div class="proj-visual__inner">
+                <span class="proj-icon">🥭</span>
+                <span class="proj-label">CV · ML · Classification</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h3>Mango Leaf Disease Detection</h3>
+            <p>ML-based image classification system using computer vision for automated detection of mango leaf diseases. Applied preprocessing, feature extraction, and model evaluation to improve prediction accuracy.</p>
+            <div class="proj-stack">
+              <span>Python</span><span>Computer Vision</span><span>Scikit-learn</span><span>Image Processing</span>
+            </div>
+            <div class="proj-highlights">
+              <span class="highlight-item">✓ Automated disease detection</span>
+              <span class="highlight-item">✓ Feature extraction pipeline</span>
+            </div>
+            <div class="proj-links">
+              <a href="https://github.com/nandinimaddipati17" class="btn btn--sm btn--ghost" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+      <div class="center-cta reveal">
+        <a href="https://github.com/nandinimaddipati17" class="btn btn--ghost" target="_blank">View All Projects on GitHub ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- AVAILABILITY BANNER -->
+  <section class="availability-banner">
+    <div class="container">
+      <div class="avail-inner reveal">
+        <div class="avail-left">
+          <span class="avail-icon">🟢</span>
+          <div>
+            <h3>Available for Internship — July 2026</h3>
+            <p>Mandatory 6-month full-time internship · Open to on-site collaboration · Valid German student residence permit with work authorisation</p>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn--primary">Get in Touch →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--alt" id="contact">
+    <div class="container">
+      <p class="section-label reveal">06 / Contact</p>
+      <h2 class="section-title reveal">Let's <em>Connect</em></h2>
+      <p class="contact-sub reveal">I'm actively looking for <strong>data science</strong> and <strong>AI/ML internship</strong> opportunities starting July 2026 in Germany and Europe. Reach out — I reply within 24 hours.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-item">
+            <span class="ci-icon">📧</span>
+            <div>
+              <p class="ci-label">Email</p>
+              <a href="mailto:nandinichowdary171@gmail.com">nandinichowdary171@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="ci-icon">📞</span>
+            <div>
+              <p class="ci-label">Phone</p>
+              <a href="tel:+4915170027480">+49 151 700 27480</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="ci-icon">📍</span>
+            <div>
+              <p class="ci-label">Location</p>
+              <p>Deggendorf, Germany 🇩🇪<br/><small>Open to relocation within Europe</small></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="ci-icon">💼</span>
+            <div>
+              <p class="ci-label">LinkedIn</p>
+              <a href="https://linkedin.com/in/nandini-maddipati-186611245" target="_blank">nandini-maddipati-186611245</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="ci-icon">🐙</span>
+            <div>
+              <p class="ci-label">GitHub</p>
+              <a href="https://github.com/nandinimaddipati17" target="_blank">nandinimaddipati17</a>
+            </div>
+          </div>
+          <a href="Nandini_Maddipati_cv.docx" class="btn btn--primary" download style="margin-top:1.5rem;display:inline-flex;align-items:center;gap:.5rem;">↓ Download CV</a>
+        </div>
+
+        <form class="contact-form reveal delay-2" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="your@company.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text" placeholder="Internship Opportunity / Collaboration / Research…" />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea rows="5" placeholder="Hi Nandini, I'd love to discuss…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send Message →</button>
+          <p class="form-note">Or email directly: <a href="mailto:nandinichowdary171@gmail.com">nandinichowdary171@gmail.com</a></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__logo"><span class="logo-bracket">{</span>NM<span class="logo-bracket">}</span></span>
+        <p class="footer__copy">© 2025 Nandini Maddipati · MSc AI & Data Science · Deggendorf, Germany</p>
+        <div class="footer__links">
+          <a href="https://linkedin.com/in/nandini-maddipati-186611245" target="_blank">LinkedIn</a>
+          <a href="https://github.com/nandinimaddipati17" target="_blank">GitHub</a>
+          <a href="mailto:nandinichowdary171@gmail.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
